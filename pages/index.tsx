@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import jwlogo from "../public/jwmc-logo1.png";
 
 const Home: NextPage = () => {
   return (
@@ -11,16 +12,9 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-5xl font-bold text-blue-500">
-          JW {"\n"} Music {"\n"} Company
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{" "}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
+        <header>
+          <Image src={jwlogo} alt="Picture of the author"></Image>
+        </header>
 
         <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
           <a
