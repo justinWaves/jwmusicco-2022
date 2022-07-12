@@ -23,21 +23,21 @@ const Home: NextPage = () => {
               <Link href="/about">
                 <a className=" ">Bio &rarr;</a>
               </Link>
-              <div className="h-12 w-1/3 bg-black absolute top-60 left-0"></div>
+              <div className="h-12 w-1/3 bg-black absolute top-60% left-0"></div>
             </h3>
 
             <h3 className="text-2xl font-bold rounded-xl border-black  border p-6 text-right hover:text-blue-600 focus:text-blue-600">
               <Link href="/about">
                 <a className=" ">Listen &rarr;</a>
               </Link>
-              <div className="h-12 w-1/3 bg-black absolute top-700 left-0"></div>
+              <div className="h-12 w-1/3 bg-black absolute top-100 left-0"></div>
             </h3>
 
             <h3 className="text-2xl font-bold rounded-xl border-black  border p-6 text-right hover:text-blue-600 focus:text-blue-600">
               <Link href="/about">
                 <a className=" ">Learn to Create &rarr;</a>
               </Link>
-              <div className="h-12 w-1/3 bg-black  absolute top-700 left-0"></div>
+              <div className="h-12 w-1/3 bg-black  absolute top-100 left-0"></div>
             </h3>
 
             <h3 className="text-2xl font-bold rounded-xl border-black  border p-6 text-right hover:text-blue-600 focus:text-blue-600">
@@ -50,7 +50,7 @@ const Home: NextPage = () => {
               <Link href="/about">
                 <a className=" ">Mixing & Mastering &rarr;</a>
               </Link>
-              <div className="h-12 w-1/3 bg-black  absolute top-700 left-0"></div>
+              <div className="h-12 w-1/3 bg-black  absolute top-100 left-0"></div>
             </h3>
           </div>
         </div>

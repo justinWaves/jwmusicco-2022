@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../components/header";
+import PageHeader from "../components/page_header";
 import Link from "next/link";
 
 function about() {
@@ -7,7 +7,7 @@ function about() {
     <div className="flex min-h-screen flex-col items-center justify-begin py-2 mt-5">
       <Link href="/">
         <a>
-          <Header />
+          <PageHeader />
         </a>
       </Link>
 
