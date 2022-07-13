@@ -11,7 +11,7 @@ interface DropDownMenuProps {
 
 function dropDownMenu({ onCancel }: DropDownMenuProps) {
   return (
-    <div className="flex h-screen w-screen md:w-1/3 md:h-full md:border rounded-none bg-slate-800 text-white absolute right-0 z-10">
+    <div className="flex h-screen w-screen md:w-1/3 md:h-full rounded-none bg-slate-800 text-white absolute right-0 z-10">
       <div className=" flex flex-col w-full ">
         <button
           className="h-12 w-12  border rounded-full absolute right-3 top-3  "
