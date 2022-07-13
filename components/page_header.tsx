@@ -3,6 +3,7 @@ import Image from "next/image";
 import jwlogo from "../public/JWMC-Logo-2022.png";
 import MenuIcon from "@mui/icons-material/Menu";
 import DropDownMenu from "./dropDownMenu";
+import Link from "next/link";
 import { useState } from "react";
 
 function header() {
@@ -31,7 +32,9 @@ function header() {
   return (
     <div className="flex flex-row w-screen max-w-4xl justify-between items-center px-5 pt-5">
       <div className="w-1/2 h-100 ">
-        <Image src={jwlogo} alt="jwmc logo"></Image>
+        <Link href="/">
+          <Image src={jwlogo} alt="jwmc logo"></Image>
+        </Link>
       </div>
 
       <button
