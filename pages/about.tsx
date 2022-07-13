@@ -1,10 +1,11 @@
 import React from "react";
 import PageHeader from "../components/page_header";
 import Link from "next/link";
+import Footer from "../components/footer";
 
 function about() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-begin py-2 mt-5">
+    <div className="flex min-h-screen flex-col items-center justify-begin">
       <Link href="/">
         <a>
           <PageHeader />
@@ -26,6 +27,7 @@ function about() {
         out centered on music production, and courses coming soon. Also
         available for 1 on 1 music lessons
       </p>
+      <Footer />
     </div>
   );
 }
