@@ -12,6 +12,7 @@
     "@mui/material": "^5.9.0",
     "next": "latest",
     "react": "18.1.0",
+    "react-calendly": "^4.0.1",
     "react-dom": "18.1.0"
   },
   "devDependencies": {

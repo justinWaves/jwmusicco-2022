@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function PianoMenuMobile() {
   return (
-    <div className="mt-6 flex  flex-wrap  mr-auto w-full md:hidden mr-10 mb-20">
+    <div className="mt-5 flex  flex-wrap  mr-auto w-full md:hidden mr-10 ">
       <div className=" flex flex-col w-full ">
         <h3 className="text-2xl font-bold rounded-xl border-black  border p-6 text-right hover:text-blue-600 focus:text-blue-600 bg-white  shadow-md hover:bg-gray-50">
           <Link href="/about">

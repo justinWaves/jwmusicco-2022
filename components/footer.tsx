@@ -6,7 +6,7 @@ import EmailIcon from "@mui/icons-material/Email";
 
 function footer() {
   return (
-    <footer className=" w-full items-center justify-center absolute bottom-0 z-99">
+    <footer className=" w-full items-center justify-center absolute bottom-0 ">
       {/* <Image src="/mobile-footer.png" width="100%" height="100%" /> */}
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -34,10 +34,10 @@ function footer() {
               objectFit="contain"
             />
           </div>
-          <div className="flex text-white">
-            <InstagramIcon />
-            <FacebookIcon />
-            <EmailIcon />
+          <div className="flex text-white text-4xl gap-3">
+            <InstagramIcon fontSize="inherit" />
+            <FacebookIcon fontSize="inherit" />
+            <EmailIcon fontSize="inherit" />
           </div>
         </div>
       </div>
