@@ -69,9 +69,7 @@ function dropDownMenu({ onCancel }: DropDownMenuProps) {
             </Link>
           </h3>
         </div>
-        <div className="md:hidden">
-          <Footer />
-        </div>
+        <div className="md:hidden">{/* <Footer /> */}</div>
       </div>
     </div>
   );

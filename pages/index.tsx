@@ -6,19 +6,20 @@ import Header from "../components/header";
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center">
-      <Head>
-        <title>JW Music Company</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <>
+      <div className="flex min-h-screen flex-col items-center justify-center">
+        <Head>
+          <title>JW Music Company</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center text-center bg-slate-100">
-        <Header />
-        <PianoMenuMobile />
-      </main>
-
+        <main className="flex w-full flex-1 flex-col items-center justify-center text-center bg-slate-100 ">
+          <Header />
+          <PianoMenuMobile />
+        </main>
+      </div>
       <Footer />
-    </div>
+    </>
   );
 };
 
