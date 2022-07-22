@@ -4,11 +4,13 @@ import Footer from "../components/footer";
 
 function mixingMastering() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-begin">
-      <PageHeader />
-      <h1>Education</h1>
+    <>
+      <div className="flex min-h-screen flex-col items-center justify-begin bg-slate-100">
+        <PageHeader />
+        <h1>Mixing and Mastering</h1>
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }
 

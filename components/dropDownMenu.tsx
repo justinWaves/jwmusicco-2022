@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Footer from "../components/footer";
+
 import jwLogo from "../public/white-jwmc.png";
 import jwLogoBlack from "../public/JWMC-Logo-2022.png";
 import CloseIcon from "@mui/icons-material/Close";
@@ -22,11 +22,11 @@ function dropDownMenu({ onCancel }: DropDownMenuProps) {
           <CloseIcon />
         </button>
 
-        <div className=" md:hidden md:p-10 mx-auto p-10">
+        {/* <div className=" md:hidden md:p-10 mx-auto p-10">
           <Link href="/">
             <Image src={jwLogoBlack} alt="jwmc logo"></Image>
           </Link>
-        </div>
+        </div> */}
 
         <div className=" hidden md:block p-20 md:p-10">
           <Link href="/">
@@ -34,7 +34,7 @@ function dropDownMenu({ onCancel }: DropDownMenuProps) {
           </Link>
         </div>
 
-        <div className="md:hidden mr-3 text-black">
+        <div className="md:hidden mr-3 text-black my-auto">
           <PianoMenuMobile />
         </div>
 
