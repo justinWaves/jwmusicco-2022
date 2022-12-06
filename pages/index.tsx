@@ -4,35 +4,76 @@ import PianoMenuMobile from "../components/PianoMenuMobile";
 import Footer from "../components/footer";
 import Image from "next/image";
 import jwlogo from "../public/white-jwmc.png";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 const Home: NextPage = () => {
   return (
     <>
-      <div className="flex min-h-screen flex-col items-center justify-center">
+      <div className="flex  flex-col items-center justify-center overflow-hidden h-screen bg-slate-900">
         <Head>
           <title>JW Music Company</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <main className="flex w-full flex-1 flex-col  items-center text-center ">
-          <div className="  absolute top-10 left-10 z-4 w-60 ">
-            <Image
-              src={jwlogo}
-              alt="jwmc logo"
-              className=" cursor-pointer object-contain z-10"
-            ></Image>
-          </div>
+        <main className=" ">
+          <Parallax pages={2} style={{ top: "0", left: "0" }}>
+            <ParallaxLayer
+              offset={0}
+              speed={2.5}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <div className="   z-4 w-60 ">
+                <Image
+                  src={jwlogo}
+                  alt="jwmc logo"
+                  className=" cursor-pointer object-contain z-10 "
+                ></Image>
+              </div>
+            </ParallaxLayer>
 
-          <div className="flex grid-cols-1">
-            <video autoPlay loop muted className=" w-auto max-w-screen z-0 ">
-              <source src="/Recordplayer.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <PianoMenuMobile />
-          <svg
+            <ParallaxLayer
+              offset={1}
+              speed={2}
+              style={{
+                backgroundImage: `url("")`,
+              }}
+            />
+
+            <ParallaxLayer
+              offset={1}
+              speed={0.5}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                color: "white",
+              }}
+            >
+              <PianoMenuMobile />
+            </ParallaxLayer>
+          </Parallax>
+
+          {/* <video
+            autoPlay
+            loop
+            muted
+            className=" absolute z-10 w-auto min-w-full min-h-full max-w-none "
+          >
+            <source src="/Recordplayer.mp4" type="video/mp4" />
+          </video> */}
+
+          {/* <div className="absolute left-0 right-0 mx-auto h-screen ">
+        
+          </div> */}
+
+          {/* <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1440 320"
-            className=" bottom-0 left-0 z-10 w-screen 
+            className=" bottom-0 left-0 z-10 w-screen
               "
           >
             <path
@@ -40,11 +81,11 @@ const Home: NextPage = () => {
               fill-opacity="1"
               d="M0,96L48,106.7C96,117,192,139,288,160C384,181,480,203,576,181.3C672,160,768,96,864,85.3C960,75,1056,117,1152,122.7C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
             ></path>
-          </svg>
+          </svg> */}
         </main>
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

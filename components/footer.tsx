@@ -6,7 +6,7 @@ import EmailIcon from "@mui/icons-material/Email";
 
 function footer() {
   return (
-    <div className=" w-full items-center justify-center relative bottom-0 bg-slate-100 ">
+    <div className=" w-full items-center justify-center relative bottom-0 bg-slate-400  ">
       {/* <Image src="/mobile-footer.png" width="100%" height="100%" /> */}
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
