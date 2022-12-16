@@ -47,7 +47,7 @@ function dropDownMenu({ onCancel }: DropDownMenuProps) {
 
           <h3 className="text-2xl font-bold  p-6 text-right  md:hover:bg-slate-400 rounded-md">
             <Link href="/past-work">
-              <a className=" ">Demo Reel &rarr;</a>
+              <a className=" ">Past Work &rarr;</a>
             </Link>
           </h3>
 

@@ -8,15 +8,15 @@ function mixingMastering() {
       <div className="flex min-h-screen flex-col items-center justify-begin bg-slate-100">
         <PageHeader />
         <div className="w-5/6 md:w-1/2 space-y-2">
-          <div className="relative w-full">
-            <h1 className="text-4xl text-white absolute left-0 right-0">
+          <div className="relative text-center flex justify-center ">
+            <h1 className="text-4xl md:text-5xl text-white absolute p-20 lg:top-10 xl:top-20 2xl:top-32">
               Mixing & Mastering Services
             </h1>
             <img src="ssl-9000.jpg" alt="" />
           </div>
           <h1 className="text-5xl mt-10 mb-5">Mixing</h1>
           <div className="bg-slate-300 p-5 pl-10">
-            <h2 className="text-2xl ">Stem Mixes- $250</h2>
+            <h2 className="text-2xl ">Stem Mixes (8 tracks maximum)- $250</h2>
             <p className="text-xs mb-3">Deliveries:</p>
 
             <ul className="list-disc">
@@ -62,7 +62,7 @@ function mixingMastering() {
             <h2 className="text-2xl "> Album Master- $350</h2>
             <p className="text-xs mb-3">Deliveries:</p>
             <ul className="list-disc">
-              <li>10+ Stereo Masters</li>
+              <li>10 Stereo Masters (+ $35 for additional tracks)</li>
               <li>+2 Recall Session</li>
             </ul>
           </div>

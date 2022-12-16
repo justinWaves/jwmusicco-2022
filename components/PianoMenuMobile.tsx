@@ -22,7 +22,7 @@ function PianoMenuMobile() {
 
         <h3 className="text-2xl font-bold rounded-xl border-black  border p-6 text-right hover:text-blue-600 focus:text-blue-600 bg-white  shadow-md hover:bg-gray-50">
           <Link href="/past-work">
-            <a className=" ">Demo Reel &rarr;</a>
+            <a className=" ">Past Work &rarr;</a>
           </Link>
           <div className="h-12 w-1/3 bg-black absolute top-100 left-0 md:left-40"></div>
         </h3>
