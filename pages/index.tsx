@@ -9,7 +9,7 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 const Home: NextPage = () => {
   return (
     <>
-      <div className="flex  flex-col items-center justify-center overflow-hidden h-screen bg-slate-900">
+      <div className="flex  flex-col items-center justify-center overflow-hidden h-screen bg-[url('../public/ssl-9000.jpg')] bg-cover">
         <Head>
           <title>JW Music Company</title>
           <link rel="icon" href="/favicon.ico" />
@@ -35,13 +35,16 @@ const Home: NextPage = () => {
               </div>
             </ParallaxLayer>
 
-            <ParallaxLayer
-              offset={1}
-              speed={2}
-              style={{
-                backgroundImage: `url("")`,
-              }}
-            />
+            <ParallaxLayer offset={1} speed={2}>
+              {/* <video
+                autoPlay
+                loop
+                muted
+                className="  object-cover hidden md:block "
+              >
+                <source src="/Recordplayer.mp4" type="video/mp4" />
+              </video> */}
+            </ParallaxLayer>
 
             <ParallaxLayer
               offset={1}
@@ -56,15 +59,6 @@ const Home: NextPage = () => {
               <PianoMenuMobile />
             </ParallaxLayer>
           </Parallax>
-
-          {/* <video
-            autoPlay
-            loop
-            muted
-            className=" absolute z-10 w-auto min-w-full min-h-full max-w-none "
-          >
-            <source src="/Recordplayer.mp4" type="video/mp4" />
-          </video> */}
 
           {/* <div className="absolute left-0 right-0 mx-auto h-screen ">
         
