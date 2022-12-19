@@ -6,7 +6,7 @@ function demoReel() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-begin bg-slate-100 ">
       <PageHeader />
-      <div className="mt-10">
+      <div className="mt-10 ">
         <iframe
           width="100%"
           height="450"
