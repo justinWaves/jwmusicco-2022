@@ -5,15 +5,18 @@ import Footer from "../components/footer";
 function mixingMastering() {
   return (
     <>
-      <div className="flex min-h-screen flex-col items-center justify-begin bg-slate-100">
+      <div className="flex min-h-screen flex-col  bg-slate-100 relative">
+        <div className="pb-32">
         <PageHeader />
-        <div className="w-5/6 md:w-1/2 space-y-2">
-          <div className="relative text-center flex justify-center ">
-            <h1 className="text-4xl md:text-5xl text-white absolute p-20 lg:top-10 xl:top-20 2xl:top-32">
+        <div className=" space-y-2 mx-auto mb-10 max-w-5xl">
+          <div className="relative text-center grid place-items-center ">
+            <h1 className="text-4xl md:text-5xl text-white absolute shadow-lg">
               Mixing & Mastering Services
             </h1>
             <img src="ssl-9000.jpg" alt="" />
           </div>
+   <div className="p-3
+   ">
           <h1 className="text-5xl mt-10 mb-5">Mixing</h1>
           <div className="bg-slate-300 p-5 pl-10">
             <h2 className="text-2xl ">Stem Mixes (8 tracks maximum)- $250</h2>
@@ -65,10 +68,12 @@ function mixingMastering() {
               <li>10 Stereo Masters (+ $35 for additional tracks)</li>
               <li>+2 Recall Session</li>
             </ul>
+            </div>
           </div>
         </div>
       </div>
       <Footer />
+      </div>
     </>
   );
 }

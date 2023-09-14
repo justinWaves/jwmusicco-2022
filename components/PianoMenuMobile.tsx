@@ -8,11 +8,13 @@ function PianoMenuMobile() {
   return (
     <div className="mt-5 flex flex-wrap w-full  mr-10 text-slate-900  ">
       <div className=" flex flex-col w-full md:w-1/2 md:mx-auto">
+<Link href="/"> 
         <img
           src="/jw-logo-round.svg"
           alt=""
-          className="w-0 md:w-32 mb-4 mx-auto"
+          className="w-0 md:w-32 mb-10 mx-auto cursor-pointer"
         />
+</Link>
         <h3 className="text-2xl font-bold rounded-xl border-black  border p-6 text-right hover:text-blue-600 focus:text-blue-600 bg-white  shadow-md hover:bg-gray-50">
           <Link href="/about">
             <a className=" ">About &rarr;</a>

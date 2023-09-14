@@ -30,8 +30,8 @@ function header() {
   console.log(isMenuOpen);
 
   return (
-    <div className="flex flex-row w-screen max-w-5xl justify-between items-center px-5 pt-5 pb-5 bg-white shadow-lg">
-      <div className="w-1/3 ">
+    <div className="flex flex-row w-screen max-w-5xl justify-between items-center px-5 pt-5 pb-5 bg-white rounded-b-lg shadow-lg mx-auto">
+      <div className="w-1/6 ">
         <Link href="/">
           <Image
             src={jwlogo}

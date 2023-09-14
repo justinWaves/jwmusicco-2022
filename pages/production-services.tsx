@@ -5,15 +5,18 @@ import Footer from "../components/footer";
 function productionService() {
   return (
     <>
-      <div className="flex min-h-screen flex-col items-center justify-begin bg-slate-100">
+      <div className="min-h-screen bg-slate-100 relative">
         <PageHeader />
-        <div className="w-5/6 md:w-1/2 space-y-2">
-          <div className="relative text-center flex justify-center ">
-            <h1 className="text-4xl md:text-5xl text-slate-900 absolute p-20 lg:top-10 xl:top-20 2xl:top-32 ">
+        <div className="pb-32">
+          <div className="max-w-5xl mx-auto">
+        <div className=" space-y-2 mb-10">
+          <div className="relative text-center grid place-items-center ">
+            <h1 className="text-4xl md:text-5xl text-slate-900 absolute">
               Music Production & Composition Services
             </h1>
             <img src="ableton.png" alt="" />
           </div>
+          <div className="p-3">
           <h1 className="text-5xl mt-15 mb-10">Ghost Production</h1>
           <div className="bg-slate-200 p-5 pl-10">
             <h2 className="text-3xl  mb-3">
@@ -108,10 +111,13 @@ function productionService() {
               <li>10 Stereo Masters (+ $35 for additional tracks)</li>
               <li>+2 Recall Session</li>
             </ul>
+            </div>
           </div>
         </div>
       </div>
+      </div>
       <Footer />
+      </div>
     </>
   );
 }

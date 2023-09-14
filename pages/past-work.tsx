@@ -4,10 +4,21 @@ import Footer from "../components/footer";
 
 function demoReel() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-begin bg-slate-100 ">
+    <div className="flex min-h-screen flex-col relative bg-slate-100 ">
       <PageHeader />
-      <div className="mt-10 ">
+   
+     
+      <div className="pb-32">
+        
+      <div className=" max-w-5xl mx-auto ">
+      <div className="relative text-center grid place-items-center ">
+            <h1 className="text-4xl md:text-5xl text-white absolute shadow-lg">
+              Works by JW Music Co
+            </h1>
+            <img src="ssl-9000.jpg" alt="" />
+          </div>
         <iframe
+        className="mt-5"
           width="100%"
           height="450"
           scrolling="no"
@@ -16,6 +27,7 @@ function demoReel() {
         ></iframe>
       </div>
       <Footer />
+      </div>
     </div>
   );
 }

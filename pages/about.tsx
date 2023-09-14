@@ -7,13 +7,11 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 function about() {
   return (
     <>
-      <div className="flex min-h-screen flex-col items-center justify-begin bg-slate-100">
-        <Link href="/">
-          <a>
-            <PageHeader />
-          </a>
-        </Link>
-        <img src="/wavy-grass.jpg" alt="" className="max-w-5xl" />
+      <div className="min-h-screen relative  bg-slate-100">
+<PageHeader />
+<div className="pb-32">
+        <img src="/wavy-grass.jpg" alt="" className="max-w-5xl mx-auto w-full" />
+        <div className="max-w-5xl p-3 mx-auto grid place-items-center mb-10">
 
         <h1 className="text-2xl font-bold mt-10">
           Get to know Justin Weisberg
@@ -28,7 +26,7 @@ function about() {
           workflow that few possess.
         </p>
         <hr />
-        <div className="mt-10 mb-10 bg-slate-700 p-5 w-1/2 max-w-5xl rounded-xl">
+        <div className="mt-10 mb-10 bg-slate-500 p-5 w-2/3 max-w-5xl rounded-xl">
           <span className=" text-slate-200 mt-5">
             "Speed in the studio allows more ideas to surface, and having more
             ideas allows you to choose the best ones for the project" -Justin
@@ -51,13 +49,16 @@ function about() {
             Justin Waves.
           </a>
         </p>
-        <h2 className="text-2xl mt-5">Follow Justin Waves on Instagram</h2>
+      
         <a href="https://www.instagram.com/justinwaves/">
-          <InstagramIcon className="text-7xl" />
+          <InstagramIcon className="text-7xl mt-5" />
         </a>
-      </div>
+        <h2 className="text-sm">Follow Justin Waves on Instagram</h2>
+        </div>
 
       <Footer />
+      </div>
+      </div>
     </>
   );
 }
