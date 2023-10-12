@@ -15,7 +15,7 @@ function about() {
             alt=""
             className="max-w-5xl mx-auto w-full md:rounded-lg shadow-lg"
           />
-          <div className="max-w-5xl p-3 grid place-items-center mb-10 bg-slate-200 md:rounded-lg  md:m-5 shadow-lg">
+          <div className="max-w-5xl p-3 grid place-items-center pb-20 bg-slate-200 md:rounded-lg  md:m-5 shadow-lg">
             <h1 className="text-5xl font-thin mt-10 text-slate-900 text-center">
               Get to know Justin Weisberg
             </h1>
@@ -31,7 +31,7 @@ function about() {
               years, he has developed a streamlined workflow that few can match.
             </p>
             <hr />
-            <div className="mt-10 mb-10 bg-slate-500 p-5 w-2/3 max-w-5xl rounded-xl shadow-lg">
+            <div className="mt-10 mb-10 bg-slate-500 p-5 m-5  max-w-5xl rounded-xl shadow-lg">
               <span className=" text-slate-200 mt-5">
                 "Speed in the studio allows more ideas to surface, and having
                 more ideas allows you to choose the best ones for the project"

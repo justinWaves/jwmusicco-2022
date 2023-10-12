@@ -9,7 +9,7 @@ function footer() {
   return (
     <div className=" w-screen  items-center justify-center absolute bottom-0 h-32">
       <div className=" ">
-        <div className="flex items-center justify-between px-10 ">
+        <div className="flex items-center justify-between px-3 md:px-10 ">
           <Link href={"/"}>
             <Image
               className="cursor-pointer"
@@ -25,17 +25,17 @@ function footer() {
               target="_blank"
               rel="noopener"
             >
-              <InstagramIcon fontSize="inherit" className="cursor-pointer" />
+              <InstagramIcon fontSize="inherit" className="cursor-pointer hover:text-teal-600" />
             </a>
             <a
               href="https://www.facebook.com/jwmusicco"
               target="_blank"
               rel="noopener"
             >
-              <FacebookIcon fontSize="inherit" className="cursor-pointer" />
+              <FacebookIcon fontSize="inherit" className="cursor-pointer hover:text-teal-600" />
             </a>
             <a href="mailto:jwmusicco@gmail.com">
-              <EmailIcon fontSize="inherit" className="cursor-pointer" />
+              <EmailIcon fontSize="inherit" className="cursor-pointer hover:text-teal-600" />
             </a>
           </div>
         </div>
@@ -43,7 +43,7 @@ function footer() {
           <p>Design and build by &nbsp;</p>
           <a
             href="https://justinwaves.github.io/jw-portfolio-2021/"
-            className="text-slate-500"
+            className="text-slate-500 hover:text-teal-600"
           >
             Justin Weisberg
           </a>

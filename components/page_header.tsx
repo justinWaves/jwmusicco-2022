@@ -31,7 +31,7 @@ function header() {
 
   return (
     <div className="flex flex-row w-screen max-w-5xl justify-between items-center px-5 pt-5 pb-5  rounded-b-lg  mx-auto">
-      <div className="w-1/6 ">
+      <div className="w-32 md:w-44 pr-3">
         <Link href="/">
           <Image
             src={jwlogo}
