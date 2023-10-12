@@ -16,7 +16,7 @@ function education() {
             </h1>
             <img src="piano.jpg" alt="" className="md:rounded-lg shadow-lg"/>
           </div>
-        <h1 className="mt-20 text-4xl md:text-5xl text-center font-thin text-slate-900 mb-20"> Schedule 1 on 1 lessons</h1>
+        <h1 className="mt-20 text-4xl md:text-5xl text-center font-thin text-slate-900 mb-5"> Schedule 1 on 1 Music Mentorship</h1>
         <div className="  ">
           <InlineWidget
             url="https://calendly.com/jwmusicco/1hour"
