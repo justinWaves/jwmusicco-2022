@@ -30,7 +30,7 @@ function header() {
   console.log(isMenuOpen);
 
   return (
-    <div className="flex flex-row w-screen max-w-5xl justify-between items-center px-5 pt-5 pb-5 bg-white rounded-b-lg shadow-lg mx-auto">
+    <div className="flex flex-row w-screen max-w-5xl justify-between items-center px-5 pt-5 pb-5  rounded-b-lg  mx-auto">
       <div className="w-1/6 ">
         <Link href="/">
           <Image
@@ -42,7 +42,7 @@ function header() {
       </div>
 
       <button
-        className="w-16 h-16 border rounded-lg hover:bg-slate-100"
+        className="w-16 h-16 border border-slate-900 text-slate-900 rounded-lg hover:bg-slate-100"
         onClick={menuClickHandler}
       >
         <MenuIcon />

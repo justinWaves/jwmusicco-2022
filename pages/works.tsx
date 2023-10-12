@@ -4,7 +4,7 @@ import Footer from "../components/footer";
 
 function demoReel() {
   return (
-    <div className="flex min-h-screen flex-col relative bg-slate-100 ">
+    <div className="flex min-h-screen flex-col relative  bg-gradient-to-t from-slate-800 to-teal-50 ">
       <PageHeader />
    
      
@@ -12,10 +12,10 @@ function demoReel() {
         
       <div className=" max-w-5xl mx-auto ">
       <div className="relative text-center grid place-items-center ">
-            <h1 className="text-4xl md:text-5xl text-white absolute shadow-lg">
+      <h1 className="text-4xl md:text-5xl text-white font-thin bg-slate-100 backdrop-blur-lg bg-opacity-30 p-2 md:p-5 rounded-lg absolute shadow-lg">
               Works by JW Music Co
             </h1>
-            <img src="ssl-9000.jpg" alt="" />
+            <img src="ssl-9000.jpg" alt="" className="md:rounded-lg shadow-lg"/>
           </div>
         <iframe
         className="mt-5"
