@@ -12,7 +12,8 @@
     "typecheck": "turbo typecheck"
   },
   "devDependencies": {
-    "turbo": "latest"
+    "turbo": "latest",
+    "next": "^15.2.4"
   },
   "workspaces": [
     "apps/*",
