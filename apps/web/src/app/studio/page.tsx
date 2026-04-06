@@ -13,9 +13,8 @@ const sections = [
   {
     eyebrow: "Breakdowns",
     heading: "How songs become something real.",
-    body: "Real project walkthroughs from concept to master. Not a tutorial — a transparent look at the decisions, wrong turns, and moments where a piece finally found itself. Arrangement, mix choices, sonic identity, and what got left on the floor.",
+    body: "Detailed project walkthroughs from first idea to final master. The decisions, the wrong turns, and the moments where a piece finally found itself. Arrangement choices, mix philosophy, sonic identity — and what got left on the floor.",
     status: "Coming soon",
-    badge: "waitlist",
     href: "/contact?subject=studio",
     cta: "Get notified",
     accent: "border-amber-500/18 hover:border-amber-400/35",
@@ -25,9 +24,8 @@ const sections = [
   {
     eyebrow: "Approach",
     heading: "The philosophy behind the choices.",
-    body: "Why certain sounds land and others don't. How arrangement serves feeling. What emotional clarity actually sounds like in a mix. Not rules — perspective. The kind of thinking that separates work that moves people from work that merely sounds professional.",
+    body: "Why certain sounds land and others don't. How arrangement serves feeling. What emotional clarity sounds like in a mix. The kind of thinking that separates work that moves people from work that merely sounds correct.",
     status: "Coming soon",
-    badge: "waitlist",
     href: "/contact?subject=studio",
     cta: "Get notified",
     accent: "border-violet-500/18 hover:border-violet-400/35",
@@ -36,10 +34,9 @@ const sections = [
   },
   {
     eyebrow: "Sessions",
-    heading: "Unfiltered looks inside the room.",
-    body: "Raw moments from actual studio sessions. Not scripted. Not polished for content. Just what happens when a song is being made — the experiments, the breakthroughs, and the long stretches of silence before something finally clicks.",
+    heading: "Unedited moments from the room.",
+    body: "Real looks inside actual sessions. The experiments, the second-guessing, the long stretches of listening before something finally clicks — and the commitment to stay when it does.",
     status: "Coming soon",
-    badge: "waitlist",
     href: "/contact?subject=studio",
     cta: "Get notified",
     accent: "border-teal-500/18 hover:border-teal-400/35",
@@ -76,12 +73,32 @@ export default function StudioPage() {
             <span className="italic text-white/45">the work.</span>
           </h1>
           <p className="mt-8 max-w-lg font-body text-sm leading-[1.8] text-white/35">
-            Not instruction. Not a course. A real look at how records get made —
-            the decisions, the doubt, and the moments where something ordinary
-            becomes something worth hearing.
+            A window into how records get made. The decisions, the doubt, and
+            the moments where something finally becomes itself.
           </p>
 
           <div className="mt-10 h-px w-24 bg-white/[0.08]" />
+        </div>
+      </section>
+
+      {/* Field note — one real piece of content to make the page feel alive */}
+      <section className="relative z-10 mx-auto max-w-6xl px-6 pb-20">
+        <div className="relative max-w-2xl rounded-2xl border border-white/[0.06] bg-white/[0.018] px-8 py-8 backdrop-blur-sm">
+          <div className="mb-5 flex items-center gap-4">
+            <p className="font-body text-[9px] uppercase tracking-[0.45em] text-white/20">
+              From the studio
+            </p>
+            <span className="h-px flex-1 bg-white/[0.05]" />
+            <p className="font-body text-[9px] text-white/15">March 2026</p>
+          </div>
+          <p className="font-body text-sm leading-[1.9] text-white/45">
+            Working on a mix this week where the verse kept feeling more
+            emotionally present than the chorus. Spent two hours adjusting
+            compression and high-end before realizing the problem was the
+            arrangement. The chorus had more elements. The verse had more space.
+            Space is not the same as emptiness. That distinction is most of this
+            job.
+          </p>
         </div>
       </section>
 
@@ -147,9 +164,9 @@ export default function StudioPage() {
         <div className="flex items-center gap-8">
           <div className="h-px flex-1 bg-white/[0.05]" />
           <p className="max-w-sm text-center font-display text-sm font-light italic leading-relaxed text-white/22">
-            &ldquo;The goal was never to make records faster.
+            &ldquo;I&rsquo;d rather lose the frequency
             <br />
-            It was to make them feel like something.&rdquo;
+            than lose the feeling.&rdquo;
           </p>
           <div className="h-px flex-1 bg-white/[0.05]" />
         </div>
