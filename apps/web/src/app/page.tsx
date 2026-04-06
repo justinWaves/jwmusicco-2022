@@ -98,8 +98,8 @@ export default function HomePage() {
             © {new Date().getFullYear()} JW Music Company · San Francisco Bay Area
           </p>
           <div className="flex items-center gap-6">
-            <a href="/learn" className="font-body text-xs text-white/18 transition-colors hover:text-white/40">
-              Learn
+            <a href="/studio" className="font-body text-xs text-white/18 transition-colors hover:text-white/40">
+              Studio
             </a>
             <a href="/learn/lessons" className="font-body text-xs text-white/18 transition-colors hover:text-white/40">
               Lessons
