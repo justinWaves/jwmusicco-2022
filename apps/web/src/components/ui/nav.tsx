@@ -5,9 +5,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const navLinks = [
-  { label: "Services", href: "/services" },
+  { label: "Work", href: "/work" },
   { label: "Scoring", href: "/scoring" },
-  { label: "Learn", href: "/learn" },
   { label: "Works", href: "/works" },
   { label: "About", href: "/about" },
 ];
