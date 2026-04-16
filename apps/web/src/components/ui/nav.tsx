@@ -21,18 +21,16 @@ export function Nav() {
       className="fixed left-0 right-0 top-0 z-50 flex items-center justify-between px-8 py-6"
     >
       {/* Logo */}
-      <Link href="/" className="flex items-center gap-3 group">
+      <Link href="/" className="group">
         <Image
-          src="/jw-logo-round.svg"
+          src="/white-jwmc.png"
           alt="JW Music Company"
-          width={36}
-          height={36}
-          style={{ width: 36, height: 36 }}
-          className="opacity-90 transition-opacity group-hover:opacity-100"
+          width={180}
+          height={48}
+          style={{ height: 36, width: "auto" }}
+          className="opacity-75 transition-opacity group-hover:opacity-100"
+          priority
         />
-        <span className="hidden font-display text-sm font-light tracking-[0.15em] text-white/60 transition-colors group-hover:text-white/90 sm:block uppercase">
-          JW Music Co
-        </span>
       </Link>
 
       {/* Nav links */}
