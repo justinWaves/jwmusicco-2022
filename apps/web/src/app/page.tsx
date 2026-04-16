@@ -14,7 +14,7 @@ export default function HomePage() {
       <Nav />
 
       {/* ① Hero */}
-      <section className="relative z-10 flex flex-col items-center justify-center px-6 pb-12 pt-40 text-center">
+      <section className="relative z-10 flex flex-col items-center justify-center px-6 pb-24 pt-40 text-center">
         <p className="mb-4 font-body text-xs font-medium uppercase tracking-[0.3em] text-white/30">
           JW Music Company
         </p>
@@ -54,45 +54,6 @@ export default function HomePage() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </a>
-        </div>
-      </section>
-
-      {/* ① b — Recent sessions strip */}
-      {/* Tells the visitor: real, varied work happens here. Replace labels with real credits as they're confirmed. */}
-      <section className="relative z-10 pb-16">
-        <div className="mx-auto max-w-6xl px-6">
-          <div className="mb-5 flex items-center gap-5">
-            <span className="font-body text-[9px] uppercase tracking-[0.4em] text-white/18">
-              Recent sessions
-            </span>
-            <div className="h-px flex-1 bg-white/[0.05]" />
-          </div>
-        </div>
-        {/* Horizontally scrollable on mobile */}
-        <div className="scrollbar-none overflow-x-auto px-6">
-          <div className="flex min-w-max gap-3 pb-1 sm:flex-wrap sm:min-w-0 mx-auto max-w-6xl">
-            {[
-              { role: "Produced", detail: "Singer-songwriter · Bay Area", accent: "text-amber-400/60" },
-              { role: "Recorded", detail: "Indie pop · Vocalist", accent: "text-amber-400/60" },
-              { role: "Mixed & Mastered", detail: "Electronic · Independent", accent: "text-teal-400/60" },
-              { role: "Scored", detail: "Indie game · Atmospheric", accent: "text-rose-400/60" },
-              { role: "Produced", detail: "R&B · Soul", accent: "text-amber-400/60" },
-              { role: "Mixed", detail: "Folk · Acoustic", accent: "text-teal-400/60" },
-              { role: "Scored", detail: "Short film · Cinematic", accent: "text-rose-400/60" },
-              { role: "Co-produced", detail: "Hip-hop · Experimental", accent: "text-violet-400/60" },
-            ].map((s, i) => (
-              <div
-                key={i}
-                className="flex items-center gap-2.5 rounded-full border border-white/[0.07] bg-white/[0.025] px-4 py-2 backdrop-blur-sm"
-              >
-                <span className={`font-body text-[10px] font-medium uppercase tracking-widest ${s.accent}`}>
-                  {s.role}
-                </span>
-                <span className="h-3 w-px bg-white/[0.1]" />
-                <span className="font-body text-[10px] text-white/28">{s.detail}</span>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
