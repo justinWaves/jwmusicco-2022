@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { AmbientOrbs } from "@/components/ui/ambient-orbs";
+import { ImagePlaceholder } from "@/components/ui/image-placeholder";
 import { PageNav } from "@/components/layout/page-nav";
 import { BookingEmbed } from "@/components/ui/booking-embed";
 import { RecordingTiers } from "./recording-tiers";
@@ -151,6 +152,16 @@ export default function RecordingPage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ⑤b — Session photo placeholders */}
+      <section className="relative z-10 mx-auto max-w-6xl px-6 pb-12">
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
+          <ImagePlaceholder label="Justin at the console" aspect="aspect-[3/4]" />
+          <ImagePlaceholder label="Artist in the booth" aspect="aspect-[3/4]" />
+          <ImagePlaceholder label="Session in progress" aspect="aspect-[3/4]" />
+          <ImagePlaceholder label="Justin producing" aspect="aspect-[3/4]" />
         </div>
       </section>
 

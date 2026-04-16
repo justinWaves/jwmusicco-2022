@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { AmbientOrbs } from "@/components/ui/ambient-orbs";
+import { ImagePlaceholder } from "@/components/ui/image-placeholder";
 import { PageNav } from "@/components/layout/page-nav";
 
 export const metadata: Metadata = {
@@ -121,6 +122,18 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* In-session photo placeholder */}
+      <section className="relative z-10 mx-auto max-w-6xl px-6 pb-20">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+          <ImagePlaceholder label="Justin producing" aspect="aspect-[4/3]" />
+          <ImagePlaceholder label="Justin recording an artist" aspect="aspect-[4/3]" />
+          <ImagePlaceholder label="Justin teaching" aspect="aspect-[4/3]" />
+        </div>
+        <p className="mt-4 font-body text-[10px] uppercase tracking-widest text-white/15 text-center">
+          Photos coming soon
+        </p>
+      </section>
+
       {/* Philosophy */}
       <section className="relative z-10 mx-auto max-w-6xl px-6 pb-20">
         <div className="mb-12 flex items-center gap-6">
@@ -171,11 +184,11 @@ export default function AboutPage() {
             </h2>
             <div className="flex flex-col items-center gap-4 sm:flex-row">
               <Link
-                href="/services"
+                href="/work"
                 className="group inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/[0.06] px-8 py-4 backdrop-blur-sm transition-all hover:border-white/25 hover:bg-white/[0.1]"
               >
                 <span className="font-body text-sm font-medium tracking-wide text-white/75 transition-colors group-hover:text-white/95">
-                  Explore services
+                  Explore the work
                 </span>
                 <svg
                   className="h-3.5 w-3.5 text-white/30 transition-all group-hover:translate-x-0.5 group-hover:text-white/60"
@@ -195,6 +208,25 @@ export default function AboutPage() {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Justin Waves artist project link */}
+      <section className="relative z-10 mx-auto max-w-6xl px-6 pb-16">
+        <div className="flex items-center justify-center gap-4">
+          <div className="h-px w-16 bg-white/[0.05]" />
+          <p className="font-body text-xs text-white/20">
+            Looking for Justin&rsquo;s artist project?{" "}
+            <a
+              href="https://justinwaves.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white/35 underline underline-offset-4 transition-colors hover:text-white/60"
+            >
+              Visit justinwaves.com
+            </a>
+          </p>
+          <div className="h-px w-16 bg-white/[0.05]" />
         </div>
       </section>
 

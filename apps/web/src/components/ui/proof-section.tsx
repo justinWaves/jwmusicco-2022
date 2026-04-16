@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { ImagePlaceholder } from "@/components/ui/image-placeholder";
 
 const stats = [
   { number: "30+", label: "Records produced", sub: "Indie to commercial" },
@@ -48,6 +49,8 @@ export function ProofSection() {
               </p>
             </div>
           </div>
+
+          <ImagePlaceholder label="Justin in session" aspect="aspect-[16/9]" />
 
           <Link
             href="/works"

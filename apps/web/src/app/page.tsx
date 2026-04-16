@@ -107,6 +107,15 @@ export default function HomePage() {
             <a href="/contact" className="font-body text-xs text-white/18 transition-colors hover:text-white/40">
               Contact
             </a>
+            <span className="text-white/[0.06]">·</span>
+            <a
+              href="https://justinwaves.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-body text-xs text-white/15 transition-colors hover:text-white/35"
+            >
+              justinwaves.com
+            </a>
           </div>
         </div>
       </footer>

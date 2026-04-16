@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { AmbientOrbs } from "@/components/ui/ambient-orbs";
+import { ImagePlaceholder } from "@/components/ui/image-placeholder";
 import { PageNav } from "@/components/layout/page-nav";
 
 export const metadata: Metadata = {
@@ -81,8 +82,9 @@ export default function StudioPage() {
         </div>
       </section>
 
-      {/* Field note — one real piece of content to make the page feel alive */}
+      {/* Field note + session photo */}
       <section className="relative z-10 mx-auto max-w-6xl px-6 pb-20">
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-[1fr_auto] lg:items-start">
         <div className="relative max-w-2xl rounded-2xl border border-white/[0.06] bg-white/[0.018] px-8 py-8 backdrop-blur-sm">
           <div className="mb-5 flex items-center gap-4">
             <p className="font-body text-[9px] uppercase tracking-[0.45em] text-white/20">
@@ -99,6 +101,14 @@ export default function StudioPage() {
             Space is not the same as emptiness. That distinction is most of this
             job.
           </p>
+        </div>
+
+        {/* Session photo placeholder */}
+        <ImagePlaceholder
+          label="Justin in session"
+          aspect="aspect-[3/4]"
+          className="hidden w-56 lg:block"
+        />
         </div>
       </section>
 
@@ -156,6 +166,110 @@ export default function StudioPage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* ── Featured course — coming soon ── */}
+      <section className="relative z-10 mx-auto max-w-6xl px-6 pb-20">
+        <div className="mb-10 flex items-center gap-6">
+          <div className="h-px flex-1 bg-white/[0.06]" />
+          <span className="font-body text-[10px] uppercase tracking-[0.3em] text-white/20">
+            In development
+          </span>
+          <div className="h-px flex-1 bg-white/[0.06]" />
+        </div>
+
+        <div className="relative overflow-hidden rounded-3xl border border-amber-500/15 bg-white/[0.02]">
+          {/* Background glow */}
+          <div className="absolute inset-0 bg-gradient-to-br from-amber-900/20 via-transparent to-violet-900/10" />
+          <div
+            className="pointer-events-none absolute -left-20 -top-20 h-72 w-72 rounded-full opacity-[0.08]"
+            style={{
+              background: "radial-gradient(circle, #d97706 0%, transparent 70%)",
+              filter: "blur(60px)",
+            }}
+          />
+
+          <div className="relative grid grid-cols-1 gap-0 lg:grid-cols-[1fr_auto]">
+            {/* Content */}
+            <div className="flex flex-col gap-5 px-10 py-12 sm:px-14 sm:py-14">
+              <div className="flex items-center gap-3">
+                <span className="rounded-full border border-amber-500/25 bg-amber-500/[0.08] px-4 py-1.5 font-body text-[9px] uppercase tracking-[0.35em] text-amber-300/70">
+                  Coming soon
+                </span>
+                <span className="font-body text-[9px] uppercase tracking-[0.25em] text-white/20">
+                  Signature course
+                </span>
+              </div>
+
+              <div>
+                <h2 className="mb-3 font-display text-3xl font-light leading-snug text-white/88 sm:text-4xl">
+                  From Demo to
+                  <br />
+                  <span className="italic text-white/55">Polished Production</span>
+                </h2>
+                <p className="max-w-lg font-body text-sm leading-[1.85] text-white/38">
+                  A workflow guide on turning demo songs into finished,
+                  release-ready productions. How to move from rough idea to
+                  master — without losing the feeling that made the idea worth
+                  pursuing in the first place.
+                </p>
+              </div>
+
+              <div className="flex flex-wrap gap-2 pt-1">
+                {["Arrangement", "Mix philosophy", "Sound design", "Finishing songs"].map(
+                  (topic) => (
+                    <span
+                      key={topic}
+                      className="rounded-full border border-white/[0.07] bg-white/[0.02] px-4 py-1.5 font-body text-[10px] uppercase tracking-widest text-white/28"
+                    >
+                      {topic}
+                    </span>
+                  )
+                )}
+              </div>
+
+              <div className="pt-2">
+                <Link
+                  href="/contact?subject=studio"
+                  className="group inline-flex items-center gap-3 rounded-full border border-amber-500/28 bg-amber-500/[0.07] px-8 py-3.5 backdrop-blur-sm transition-all hover:border-amber-400/48 hover:bg-amber-500/[0.14]"
+                >
+                  <span className="font-body text-sm font-medium tracking-wide text-amber-100/80 transition-colors group-hover:text-amber-50">
+                    Join the waitlist
+                  </span>
+                  <svg
+                    className="h-3.5 w-3.5 text-amber-400/40 transition-all group-hover:translate-x-0.5 group-hover:text-amber-300/70"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
+            {/* Right side — decorative placeholder for course cover */}
+            <div className="hidden items-stretch lg:flex">
+              <div className="relative w-64 border-l border-white/[0.05]">
+                <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
+                  <svg
+                    className="h-8 w-8 text-white/10"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={0.75}
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                  </svg>
+                  <p className="font-body text-[9px] uppercase tracking-[0.3em] text-white/12">
+                    Course cover
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
